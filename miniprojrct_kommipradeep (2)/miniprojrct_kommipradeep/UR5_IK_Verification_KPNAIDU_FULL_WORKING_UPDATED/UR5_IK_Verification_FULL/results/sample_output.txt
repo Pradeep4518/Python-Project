@@ -1,7 +1,0 @@
-=== UR5 IK Verification Demo ===
-q_true (deg): [ 20. -80. 100. -30.  60.  10.]
-q_sol  (deg): [ 20.01 -80.02 100.03 -30.01  60.02   9.99]
-
-Position error (m): 1.20000000e-06
-Orientation error (rad): 2.30000000e-06
-det(JJ^T): 3.40000000e-03
