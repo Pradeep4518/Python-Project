@@ -1,7 +1,9 @@
 students = []
 marks = []
+numbers = int(input("Enter the number of students: "))
 
-def add_student():
+
+for i in range (numbers):
     name = input("Enter student name: ")
     mark = int(input("Enter marks: "))
     students.append(name)
@@ -32,39 +34,37 @@ def highest_marks():
         index = marks.index(max_mark)
         print("Topper:", students[index], "-", max_mark, "\n")
 
-numbers = int(input("Enter the number of students: "))
-count = 0 
-
 while True:
     print("===== Student Marks Manager =====")
-    print("1. Add Student")
-    print("2. Display Students")
-    print("3. Average Marks")
-    print("4. Find Topper")
-    print("5. Exit")
+    print("1. Display Students")
+    print("2. Average Marks")
+    print("3. Find Topper")
+    print("4. Exit")
 
     choice = input("Enter your choice: ")
 
+   
     if choice == '1':
-        for i in range (numbers):
-            if count < numbers:
-                add_student()
-                count += 1
-            else:
-                print("You already added all students!\n")
-
-    elif choice == '2':
         display_students()
 
-    elif choice == '3':
+    elif choice == '2':
         average_marks()
 
-    elif choice == '4':
+    elif choice == '3':
         highest_marks()
 
-    elif choice == '5':
+    elif choice == '4':
         print("Exiting program...")
         break
 
     else:
         print("Invalid choice! Please try again.\n")
+
+
+
+
+
+
+
+
+
